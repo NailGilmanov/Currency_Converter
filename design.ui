@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Конвертер валют</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>811</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="converter_page">
+     <attribute name="title">
+      <string>Конвертер Валют</string>
+     </attribute>
+     <widget class="QLabel" name="title">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 12px;
+color: #777;
+font-family: GraphikCy, &quot;Helvetica CY&quot;, Arial, sans-serif;
+</string>
+      </property>
+      <property name="text">
+       <string>У меня есть</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>311</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 9px;
+padding: 0</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="cur_btn1">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{	
+	height: 100%;
+	border: 0;
+	border-radius: 0;
+	border: 0.5px solid #999;
+	color: #999;
+	border-left-radius: 8px;
+	text-align: center;
+	font-family: GraphikCy, &quot;Helvetica CY&quot;, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px
+}
+
+QPushButton:hover {
+	background-color: #16b67f;
+	color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>RUB</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="cur_btn2">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{	
+	height: 100%;
+	border: 0;
+	border-radius: 0;
+	border: 0.5px solid #999;
+	color: #999;
+	border-left-radius: 8px;
+	text-align: center;
+	font-family: GraphikCy, &quot;Helvetica CY&quot;, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px
+}
+
+QPushButton:hover {
+	background-color: #16b67f;
+	color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>USD</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="cur_btn3">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{	
+	height: 100%;
+	border: 0;
+	border-radius: 0;
+	border: 0.5px solid #999;
+	color: #999;
+	border-left-radius: 8px;
+	text-align: center;
+	font-family: GraphikCy, &quot;Helvetica CY&quot;, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px
+}
+
+QPushButton:hover {
+	background-color: #16b67f;
+	color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>EUR</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="cur_btn4">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{	
+	height: 100%;
+	border: 0;
+	border-radius: 0;
+	border: 0.5px solid #999;
+	color: #999;
+	border-left-radius: 8px;
+	text-align: center;
+	font-family: GraphikCy, &quot;Helvetica CY&quot;, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px
+}
+
+QPushButton:hover {
+	background-color: #16b67f;
+	color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>GBP</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox">
+         <property name="styleSheet">
+          <string notr="true">QComboBox{	
+	height: 100%;
+	border: 0;
+	border-radius: 0;
+	border: 0.5px solid #999;
+	color: #999;
+	border-left-radius: 8px;
+	text-align: center;
+	font-family: GraphikCy, &quot;Helvetica CY&quot;, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px
+}
+
+QComboBox:hover {
+	background-color: #16b67f;
+	color: white;
+}</string>
+         </property>
+         <property name="frame">
+          <bool>false</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>PLN</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DKK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SGD</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SIT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HUF</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NOK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>LTL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SKK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>JPY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>KRW</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ROL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PHP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>GBP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CHF</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MXN</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SEK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CNY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CYP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CAD</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BGN</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>LVL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ISK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CZK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HRK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IDR</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NZD</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TRL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ILS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>RON</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>INR</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MYR</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>THB</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MTL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ZAR</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TRY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BRL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>EEK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>AUD</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HKD</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="title2">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>10</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 12px;
+color: #777;
+font-family: GraphikCy, &quot;Helvetica CY&quot;, Arial, sans-serif;
+</string>
+      </property>
+      <property name="text">
+       <string>Хочу приобрести</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalWidget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>30</y>
+        <width>311</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 9px;
+padding: 0</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="cur_btn5">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{	
+	height: 100%;
+	border: 0;
+	border-radius: 0;
+	border: 0.5px solid #999;
+	color: #999;
+	border-left-radius: 8px;
+	text-align: center;
+	font-family: GraphikCy, &quot;Helvetica CY&quot;, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px
+}
+
+QPushButton:hover {
+	background-color: #16b67f;
+	color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>RUB</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="cur_btn6">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{	
+	height: 100%;
+	border: 0;
+	border-radius: 0;
+	border: 0.5px solid #999;
+	color: #999;
+	border-left-radius: 8px;
+	text-align: center;
+	font-family: GraphikCy, &quot;Helvetica CY&quot;, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px
+}
+
+QPushButton:hover {
+	background-color: #16b67f;
+	color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>USD</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="cur_btn7">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{	
+	height: 100%;
+	border: 0;
+	border-radius: 0;
+	border: 0.5px solid #999;
+	color: #999;
+	border-left-radius: 8px;
+	text-align: center;
+	font-family: GraphikCy, &quot;Helvetica CY&quot;, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px
+}
+
+QPushButton:hover {
+	background-color: #16b67f;
+	color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>EUR</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="cur_btn8">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{	
+	height: 100%;
+	border: 0;
+	border-radius: 0;
+	border: 0.5px solid #999;
+	color: #999;
+	border-left-radius: 8px;
+	text-align: center;
+	font-family: GraphikCy, &quot;Helvetica CY&quot;, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px
+}
+
+QPushButton:hover {
+	background-color: #16b67f;
+	color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>GBP</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_2">
+         <property name="styleSheet">
+          <string notr="true">QComboBox{	
+	height: 100%;
+	border: 0;
+	border-radius: 0;
+	border: 0.5px solid #999;
+	color: #999;
+	border-left-radius: 8px;
+	text-align: center;
+	font-family: GraphikCy, &quot;Helvetica CY&quot;, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px
+}
+
+QComboBox:hover {
+	background-color: #16b67f;
+	color: white;
+}</string>
+         </property>
+         <property name="frame">
+          <bool>false</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>PLN</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DKK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SGD</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SIT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HUF</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NOK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>LTL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SKK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>JPY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>KRW</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ROL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PHP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>GBP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CHF</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MXN</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SEK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CNY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CYP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CAD</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BGN</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>LVL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ISK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CZK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HRK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IDR</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NZD</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TRL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ILS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>RON</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>INR</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MYR</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>THB</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MTL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ZAR</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TRY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BRL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>EEK</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>AUD</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HKD</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLineEdit" name="input">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>311</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid #999;
+font-family: Bahnschrift;
+padding: 10px;
+font-weight: 600;
+font-size: 44px;
+color: black</string>
+      </property>
+      <property name="text">
+       <string>5000</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="output">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>90</y>
+        <width>311</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid #999;
+font-family: Bahnschrift;
+padding: 10px;
+font-weight: 600;
+font-size: 44px;
+color: black</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="seq">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>120</y>
+        <width>31</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">text-align: center;
+font-size: 40px;
+font-weight: 800</string>
+      </property>
+      <property name="text">
+       <string>=</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="cur_des">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>200</y>
+        <width>201</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #999
+</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="cur_des2">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>200</y>
+        <width>201</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #999
+</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QCalendarWidget" name="calendarWidget">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>270</y>
+        <width>312</width>
+        <height>183</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);</string>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="date">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>240</y>
+        <width>111</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="description">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>311</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0;
+font-size: 10px</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:10px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'GraphikCy,Helvetica CY,Arial,sans-serif'; font-size:8pt; color:#777777; background-color:#ffffff;&quot;&gt;Конвертер валют онлайн — инструмент, который позволит вам рассчитать соотношения актуальных курсов денежных средств всего мира на сегодня.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="full_des_btn">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>290</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+color: #16b67f;
+border: 0</string>
+      </property>
+      <property name="text">
+       <string>Развернуть</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="hidden_description">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>290</y>
+        <width>256</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 10px;
+border: 0;
+z-index: 5000;
+transition: 0.5s</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:10px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:8px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'GraphikCy,Helvetica CY,Arial,sans-serif'; font-size:8pt; color:#777777; background-color:#ffffff;&quot;&gt;Все переводы курсов конвертер осуществляет на основе стоимости валют по данным ЦБ РФ.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:8px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'GraphikCy,Helvetica CY,Arial,sans-serif'; font-size:8pt; color:#777777; background-color:#ffffff;&quot;&gt;Данные о котировках международных валют обновляются каждую минуту. Наш калькулятор позволит вам быстро и точно сделать перевод курса таких валют, как: российские рубли, украинские гривны, доллары США, евро, белорусские рубли, тенге, тайские баты, юани, чешские кроны, корейские воны.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="market_page">
+     <attribute name="title">
+      <string>Фондовый рынок</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
